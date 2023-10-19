@@ -1,21 +1,21 @@
+
 #define PIN 6
 #define NUMPIXELS 16
-
+#include <Arduino.h>
+#include "Animation.h"
+#include "Blinker.h" 
 #include <Adafruit_NeoPixel.h>
 #include <Adafruit_TinyUSB.h>
 #include <MIDI.h>
-#include "Animation.h"
-
-Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 Adafruit_USBD_MIDI usb_midi;
 MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
 
 
-//timer
+//timer 
 static uint16_t timer_interval = 100;
 static long timer_last = 0;
-int timer_count = 0;
+int timer_count = 0; 
 
 ///CLock
 bool clock_on = false;
@@ -23,8 +23,10 @@ bool clock_on = false;
 int color_r = 255;
 int color_g = 255;
 int color_b = 255;
-
-Animation animation = Blinker(pixels,0, NUMPIXELS, 1);
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+Animation* animation1 = new Blinker(pixels,0, 8, 12, 1);     
+Animation* animation2 = new Blinker(pixels,7, 13, 6, 1);
+Animation* animation3 = new Blinker(pixels,13, 16, 24, 1);  
 
 bool blink_on = false;
 
@@ -35,7 +37,7 @@ int rocket_i = 0;
 void setup() {
 #if defined(ARDUINO_ARCH_MBED) && defined(ARDUINO_ARCH_RP2040)
   // Manual begin() is required on core without built-in support for TinyUSB such as mbed rp2040
-  TinyUSB_Device_Init(0);
+  TinyUSB_Device_Init(0); 
 #endif
   usb_midi.setStringDescriptor("MidiLed");
 
@@ -59,7 +61,10 @@ void handleNoteOn(byte channel, byte pitch, byte velocity) {
     case 62: color_g = 255 * velocity / 127; break;
     case 63: color_b = 255 * velocity / 127; break;
   }
-
+  animation1->setColors(color_r, color_g, color_b);
+  animation2->setColors(color_r, color_g, color_b);
+  animation3->setColors(color_r, color_g, color_b);
+  
   //Log when a note is pressed.
   Serial.print("Note on: channel = ");
   Serial.print(channel);
@@ -113,7 +118,9 @@ void rocket(int from, int to, int length) {
 }
 
 void handleClock() { 
-  animation.run();  
+  animation1->run(); 
+  animation2->run(); 
+  animation3->run();  
 }
 
 void clearAll() {

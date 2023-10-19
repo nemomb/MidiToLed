@@ -17,15 +17,4 @@ class Animation {
   virtual void run();
 };
 
-class Blinker : public Animation{
-  bool from;
-  int to;
-  int gap;
-  Adafruit_NeoPixel pixels;
-  bool blink_on = false;
-  public:
-  Blinker(Adafruit_NeoPixel pixels, int from, int to, int gap);
-
-  void run();
-};
 #endif

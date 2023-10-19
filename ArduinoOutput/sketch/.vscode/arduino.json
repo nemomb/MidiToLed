@@ -1,0 +1,9 @@
+#line 1 "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\MidiToLed\\.vscode\\arduino.json"
+{
+    "sketch": "MidiToLed.ino",
+    "port": "COM7",
+    "board": "esp32:esp32:esp32s3",
+    "configuration": "JTAGAdapter=builtin,PSRAM=enabled,FlashMode=qio,FlashSize=4M,LoopCore=1,EventsCore=1,USBMode=default,CDCOnBoot=cdc,MSCOnBoot=default,DFUOnBoot=default,UploadMode=default,PartitionScheme=default,CPUFreq=240,UploadSpeed=921600,DebugLevel=none,EraseFlash=none",
+    "programmer": "esptool",
+    "output": "../ArduinoOutput"
+}
