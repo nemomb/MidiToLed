@@ -35,17 +35,17 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\Animation.cpp",
+    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Animation.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\Blinker.cpp",
+    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Blinker.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\WalkingDot.cpp",
+    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\WalkingDot.cpp",
     "Include": "",
     "Includepath": null
   },

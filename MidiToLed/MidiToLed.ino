@@ -1,9 +1,9 @@
 #define PIN 6
 #define NUMPIXELS 16
 #include <Arduino.h>
-#include "Animation.h"
-#include "Blinker.h"
-#include "WalkingDot.h"
+#include "src/Animation/Animation.h"
+#include "src/Animation/Blinker.h"
+#include "src/Animation/WalkingDot.h" 
 #include <Adafruit_NeoPixel.h>
 #include <Adafruit_TinyUSB.h>
 #include <MIDI.h>
@@ -49,7 +49,7 @@ void setup()
   Serial.begin(115200);
 
     animation1 = new Blinker(pixels, 0, 1, 2, 1);
-  animation2 = new WalkingDot(pixels, 2, 13, 8, 1);
+  animation2 = new WalkingDot(pixels, 2, 13, 32, 1);
   animation3 = new Blinker(pixels, 15, 16, 4, 1);
 
   while (!TinyUSBDevice.mounted())
