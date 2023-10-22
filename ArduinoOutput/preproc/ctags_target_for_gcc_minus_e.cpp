@@ -50,7 +50,7 @@ void setup()
   Serial.begin(115200);
 
     animation1 = new Blinker(pixels, 0, 1, 2, 1);
-  animation2 = new WalkingDot(pixels, 2, 13, 32, 1);
+  animation2 = new WalkingDot(pixels, 2, 13, 48, 1);
   animation3 = new Blinker(pixels, 15, 16, 4, 1);
 
   while (!TinyUSBDevice.mounted())

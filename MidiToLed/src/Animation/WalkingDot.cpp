@@ -20,12 +20,13 @@ void WalkingDot::run() {
   
      int walkingdot_i_prev = (int) walkingdot_i;
     
-     walkingdot_i =  walkingdot_i + 3*speed/numberOfLeds; 
+     walkingdot_i =  walkingdot_i + (float)numberOfLeds/(float)speed; 
      if(walkingdot_i_prev!= (int)walkingdot_i){
         pixels.setPixelColor((int)walkingdot_i_prev, pixels.Color(0, 0, 0));
         pixels.setPixelColor((int)walkingdot_i, pixels.Color(color_r, color_g, color_b));
      }     
      if (walkingdot_i >= to) {
+      pixels.setPixelColor((int)walkingdot_i, pixels.Color(0, 0, 0));
       walkingdot_i = from;
     }   
     
