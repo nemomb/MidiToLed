@@ -14,11 +14,11 @@ class Blinker : public Animation {
   private:
     int from;
     int to;
-    int divisor;
+    int speed; 
     int gap; 
     int counter;
     Adafruit_NeoPixel& pixels;
-    bool blink_on = false;
+    bool blink_on = true;
   public:
     Blinker(Adafruit_NeoPixel& pixels, int from, int to, int divisor, int gap);
     void run() override ;

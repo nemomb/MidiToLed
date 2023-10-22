@@ -9,13 +9,13 @@
 #include "Animation.h"
 #include "Blinker.h"
 
-Blinker::Blinker(Adafruit_NeoPixel &pixels, int from, int to, int divisor, int gap) : Animation(), pixels(pixels), from(from), to(to), gap(gap)
+Blinker::Blinker(Adafruit_NeoPixel &pixels, int from, int to, int speed, int gap) : Animation(), pixels(pixels), from(from), to(to), gap(gap)
 {
   this->pixels = pixels;
   this->from = from;
   this->to = to;
   this->gap = gap;
-  this->divisor = divisor;
+  this->speed = speed;  
   this->counter = 0;
 }
 
@@ -27,17 +27,20 @@ void Blinker::run()
     {
       for (uint16_t i = from; i < to; i = i + gap)
       {
-        pixels.setPixelColor(i, pixels.Color(color_r, color_g, color_b));
+        pixels.setPixelColor(i, pixels.Color(color_r, color_g, color_b)); 
       }
     }
     else
     {
-      pixels.clear();
+      for (uint16_t i = from; i < to; i = i + gap)
+      {
+        pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+      }
     }
     pixels.show();
     blink_on = !blink_on;
   }
-  if(counter >= divisor-1){
+  if(counter >= 3 * speed - 1 ){
     counter = 0;
   } else {
     counter++;

@@ -1,9 +1,9 @@
 {
-  "additionalFiles": "..\\..\\..,..\\..\\..,..\\..\\..,..\\..,..\\..,..\\..,..\\..,..\\..",
+  "additionalFiles": "..\\..\\..,..\\..\\..,..\\..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..",
   "builtInToolsFolders": "",
   "compiler.optimization_flags": "-Os",
   "customBuildProperties": "",
-  "fqbn": "esp32:esp32:esp32s3:JTAGAdapter=builtin,PSRAM=enabled,FlashMode=qio,FlashSize=4M,LoopCore=1,EventsCore=1,USBMode=default,CDCOnBoot=cdc,MSCOnBoot=default,DFUOnBoot=default,UploadMode=default,PartitionScheme=default,CPUFreq=240,UploadSpeed=921600,DebugLevel=none,EraseFlash=none",
+  "fqbn": "esp32:esp32:esp32s3:JTAGAdapter=default,PSRAM=enabled,FlashMode=qio,FlashSize=4M,LoopCore=1,EventsCore=1,USBMode=default,CDCOnBoot=cdc,MSCOnBoot=default,DFUOnBoot=default,UploadMode=cdc,PartitionScheme=default,CPUFreq=240,UploadSpeed=921600,DebugLevel=none,EraseFlash=all",
   "hardwareFolders": "C:\\Users\\manue\\AppData\\Local\\Arduino15\\packages",
   "otherLibrariesFolders": "C:\\Users\\manue\\Documents\\Arduino\\libraries",
   "runtime.ide.version": "10607",

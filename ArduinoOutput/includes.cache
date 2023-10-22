@@ -45,6 +45,11 @@
     "Includepath": null
   },
   {
+    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\WalkingDot.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
     "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel\\Adafruit_NeoPixel.cpp",
     "Include": "",
     "Includepath": null

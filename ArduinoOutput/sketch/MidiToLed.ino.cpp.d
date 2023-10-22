@@ -183,6 +183,7 @@ C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\MidiToL
  C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\Animation.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_NeoPixel/Adafruit_NeoPixel.h \
  C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\Blinker.h \
+ C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\WalkingDot.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/Adafruit_TinyUSB.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/arduino/ports/esp32/tusb_config_esp32.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/tusb_option.h \
