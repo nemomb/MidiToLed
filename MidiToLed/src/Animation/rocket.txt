@@ -1,0 +1,22 @@
+void rocket(int from, int to, int length)
+{
+
+  if (rocket_i >= to)
+  {
+    rocket_i = from;
+  }
+
+  // Clear unused LEDS
+  for (int i = rocket_i; i >= (rocket_i - length); i--)
+  {
+    int led = i;
+    if (led < from)
+    {
+      led = to - 1;
+    }
+    uint16_t divisor = (3 * (rocket_i - i) + 1);
+    pixels.setPixelColor(i, pixels.Color(color_r / divisor, color_g / divisor, color_b / divisor));
+  }
+  pixels.show();
+  rocket_i++;
+}

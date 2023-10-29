@@ -1,4 +1,4 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\libraries\MIDI_Library\MIDI.cpp.o: \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\libraries\MIDI_Library\MIDI.cpp.o: \
  C:\Users\manue\Documents\Arduino\libraries\MIDI_Library\src\MIDI.cpp \
  C:\Users\manue\Documents\Arduino\libraries\MIDI_Library\src\MIDI.h \
  C:\Users\manue\Documents\Arduino\libraries\MIDI_Library\src\midi_Defs.h \

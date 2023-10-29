@@ -1,4 +1,4 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\libraries\SPI\SPI.cpp.o: \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\libraries\SPI\SPI.cpp.o: \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\SPI\src\SPI.cpp \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\SPI\src\SPI.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\variants\esp32s3/pins_arduino.h \

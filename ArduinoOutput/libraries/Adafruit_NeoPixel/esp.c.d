@@ -1,4 +1,4 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\libraries\Adafruit_NeoPixel\esp.c.o: \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\libraries\Adafruit_NeoPixel\esp.c.o: \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_NeoPixel\esp.c \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Arduino.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/esp_arduino_version.h \

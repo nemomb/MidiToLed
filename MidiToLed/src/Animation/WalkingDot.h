@@ -6,15 +6,11 @@
 
 class WalkingDot : public Animation {
 private:
-  int from;
-  int to;
-  int speed;
   float walkingdot_i; 
-  int counter;
-  int numberOfLeds;
-  Adafruit_NeoPixel& pixels;
+  float increment;
+  float walkingdot_i_prev =-1; 
 public:
-  WalkingDot(Adafruit_NeoPixel& pixels, int from, int to, int speed, int start);
+  WalkingDot(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int start);
   void run() override; 
 };
 

@@ -10,42 +10,62 @@
     "Includepath": "C:\\Users\\manue\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.14\\variants\\esp32s3"
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
     "Include": "Adafruit_NeoPixel.h",
     "Includepath": "C:\\Users\\manue\\Documents\\Arduino\\libraries\\Adafruit_NeoPixel"
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
     "Include": "Adafruit_TinyUSB.h",
     "Includepath": "C:\\Users\\manue\\Documents\\Arduino\\libraries\\Adafruit_TinyUSB_Library\\src"
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
     "Include": "SPI.h",
     "Includepath": "C:\\Users\\manue\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.14\\libraries\\SPI\\src"
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
     "Include": "MIDI.h",
     "Includepath": "C:\\Users\\manue\\Documents\\Arduino\\libraries\\MIDI_Library\\src"
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\MidiToLed.ino.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Animation.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Animation.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Blinker.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\AnimationConfigurations.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\WalkingDot.cpp",
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Blinker.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Flame.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\Flicker.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\None.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\ArduinoOutput\\sketch\\src\\Animation\\WalkingDot.cpp",
     "Include": "",
     "Includepath": null
   },

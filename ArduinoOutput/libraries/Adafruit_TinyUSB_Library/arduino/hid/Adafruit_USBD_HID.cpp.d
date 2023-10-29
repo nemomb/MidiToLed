@@ -1,4 +1,4 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\libraries\Adafruit_TinyUSB_Library\arduino\hid\Adafruit_USBD_HID.cpp.o: \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\libraries\Adafruit_TinyUSB_Library\arduino\hid\Adafruit_USBD_HID.cpp.o: \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src\arduino\hid\Adafruit_USBD_HID.cpp \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/tusb_option.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/arduino_tinyusb/tinyusb/src/common/tusb_compiler.h \

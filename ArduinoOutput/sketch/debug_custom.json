@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\manue\\Documents\\Arduino\\Projects\\MidiToLed\\MidiToLed\\debug_custom.json"
+#line 1 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\debug_custom.json"
 {
 	"name":"Arduino on ESP32-S3",
 	"toolchainPrefix":"xtensa-esp32s3-elf",

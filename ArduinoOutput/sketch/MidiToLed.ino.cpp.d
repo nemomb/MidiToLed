@@ -1,5 +1,5 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\MidiToLed.ino.cpp.o: \
- C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\MidiToLed.ino.cpp \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\MidiToLed.ino.cpp.o: \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\MidiToLed.ino.cpp \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Arduino.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/esp_arduino_version.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/freertos/include/freertos/FreeRTOS.h \
@@ -180,11 +180,14 @@ C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\MidiToL
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32/spiram.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/io_pin_remap.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Arduino.h \
- C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_NeoPixel/Adafruit_NeoPixel.h \
- C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\src/Animation/Blinker.h \
- C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
- C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\sketch\src/Animation/WalkingDot.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/None.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Blinker.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/WalkingDot.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Flicker.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Animationconfigurations.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/Adafruit_TinyUSB.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/arduino/ports/esp32/tusb_config_esp32.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/tusb_option.h \

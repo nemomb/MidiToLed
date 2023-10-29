@@ -1,4 +1,4 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\libraries\Adafruit_TinyUSB_Library\arduino\msc\Adafruit_USBH_MSC.cpp.o: \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\libraries\Adafruit_TinyUSB_Library\arduino\msc\Adafruit_USBH_MSC.cpp.o: \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src\arduino\msc\Adafruit_USBH_MSC.cpp \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src/arduino/ports/esp32/tusb_config_esp32.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/esp_arduino_version.h \

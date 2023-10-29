@@ -1,4 +1,4 @@
-C:\Users\manue\Documents\Arduino\Projects\MidiToLed\ArduinoOutput\libraries\Adafruit_TinyUSB_Library\tusb.c.o: \
+C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\libraries\Adafruit_TinyUSB_Library\tusb.c.o: \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src\tusb.c \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src\tusb_option.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_TinyUSB_Library\src\common/tusb_compiler.h \
