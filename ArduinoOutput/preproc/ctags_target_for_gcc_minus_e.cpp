@@ -22,7 +22,7 @@ int color_b = 255;
 
 Adafruit_NeoPixel pixels(240, 6, ((1 << 6) | (1 << 4) | (0 << 2) | (2)) /*|< Transmit as G,R,B*/ + 0x0000 /*|< 800 KHz data transmission*/);
 const int num_animations = 6;
-Animation *animations[3] = {nullptr, nullptr, nullptr};
+Animation *animations[num_animations] = {nullptr, nullptr, nullptr,nullptr, nullptr, nullptr}; //@Todo Do it right
 
 int rocket_i = 0;
 void setup()
