@@ -1,16 +1,28 @@
 # 1 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 
 
-# 4 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
-# 5 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
-# 6 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
-# 7 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+
+
+
+
 # 8 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
 # 9 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
 # 10 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
 # 11 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
 # 12 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
 # 13 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+# 14 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+# 15 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+# 16 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+# 17 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+# 18 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+
+# 20 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+# 21 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino" 2
+
+const char* ssid = "nemo";
+const char* password = "Feigelstrasse50";
+const char* apiUrl = "your-API-URL";
 
 Adafruit_USBD_MIDI usb_midi;
 midi::SerialMIDI<Adafruit_USBD_MIDI> serialMIDI(usb_midi); midi::MidiInterface<midi::SerialMIDI<Adafruit_USBD_MIDI>> MIDI((midi::SerialMIDI<Adafruit_USBD_MIDI>&)serialMIDI);;
@@ -35,7 +47,7 @@ void setup()
   // usb_midi.setStringDescriptor("MidiLed");
   for (size_t i = 0; i < num_animations; i++)
   {
-    animations[i] = new None(pixels, 0, 0, color_r, color_g, color_b, 0,0);
+    animations[i] = new Black(pixels, 0, 0, color_r, color_g, color_b, 0,0);
   }
   MIDI.begin(0);
   MIDI.setHandleNoteOn(handleNoteOn);
@@ -44,11 +56,31 @@ void setup()
     delay(1);
   pixels.begin();
   Serial.begin(115200);
+
+  // Connect to Wi-Fi
+  /*WiFi.begin(ssid, password);
+
+    delay(4000);  
+
+  while (WiFi.status() != WL_CONNECTED) {
+
+    delay(1000);
+
+    Serial.println("Connecting to WiFi...");
+
+  }
+
+  Serial.println("Connected to WiFi");
+
+  */
+# 68 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 }
 
 void loop()
 {
   MIDI.read();
+  Serial.println(analogRead(6));
+
 }
 
 void handleNoteOn(byte channel, byte pitch, byte velocity)
@@ -69,11 +101,16 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
     setColors();
     break;
   default:
-    Serial.println("default");
     if (animationConfigs.find(pitch) != animationConfigs.end())
     {
+      animations[0] = new Black(pixels, 0, TOTAL_LED_COUNT, 0, 0, 0, 0,0);
+      animations[0]->run();
       for (int i = 0; i < num_animations; i++)
       {
+        if (animations[i] != nullptr)
+          {
+            animations[i] = nullptr;
+          }
         if (animationConfigs[pitch].size() > i)
         {
           const AnimationConfig &config = animationConfigs[pitch][i];
@@ -86,7 +123,7 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
             animations[i] = nullptr;
 
           }*/
-# 84 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+# 113 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
           animations[i] = createAnimation(config, pixels);
         }
       }
@@ -132,5 +169,13 @@ Animation *createAnimation(const AnimationConfig &config, Adafruit_NeoPixel &pix
   {
     return new Flicker(pixels, config.from, config.to, color_r, color_g, color_b ,config.duration, config.specific);
   }
-  return new None(pixels, 1, 4,color_r, color_g, color_b, 8, 1);
+  else if (config.className == "Flash")
+  {
+    return new Flash(pixels, config.from, config.to, color_r, color_g, color_b ,config.duration, config.specific);
+  }
+  else if (config.className == "Black")
+  {
+    return new Black(pixels, config.from, config.to, color_r, color_g, color_b ,config.duration, config.specific);
+  }
+  return new Black(pixels, 1, 1,color_r, color_g, color_b, 8, 1);
 }

@@ -12,7 +12,6 @@
 class Blinker : public Animation { 
   private:
     int gap; 
-    int counter;
     bool blink_on = true;
   public:
     Blinker(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap);

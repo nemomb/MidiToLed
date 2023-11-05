@@ -12,15 +12,4 @@ None::None(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int
 {
 }
 
-void None::run()
-{
-  if (first)
-  {
-    first = false;
-    for (uint16_t i = from; i < to; i++)
-    {
-      pixels.setPixelColor(i, pixels.Color(0, 0, 0));
-    }
-    pixels.show();
-  }
-};
+void None::run(){};

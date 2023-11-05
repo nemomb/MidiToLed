@@ -4,19 +4,22 @@
 #include <string>
 #include <vector>
 
+const int TOTAL_LED_COUNT = 240;
+
 std::map<int, std::vector<AnimationConfig>> animationConfigs = {
   //Classname, from, to, duration, specific
   {64, {
-    {"Blinker", 0, 80, 8, 1},
-    {"WalkingDot", 80, 120, 8, 4},
-    {"Blinker", 120, 200, 8, 1},
-    {"WalkingDot", 200, 240, 8, 4},
+    {"Flash", 0, 120, 1, 1},
+    {"Black", 120, 240, 8, 4},
+    {"None", 120, 200, 8, 1},
+    {"None", 200, 240, 8, 4},
 
   }},
   {65, {
-    {"Blinker", 0, 40, 2, 1},
-    {"WalkingDot", 40, 240, 8, 1},
-    {"None", 13, 16, 4, 1}
+    {"Flash", 120, 240, 1, 1},
+    {"Black", 0, 120, 8, 4},
+    {"None", 120, 200, 8, 1},
+    {"None", 200, 240, 8, 4},
   }},
   {66, {
     {"WalkingDot", 0, 240, 8, 1},

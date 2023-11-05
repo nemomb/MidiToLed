@@ -21,6 +21,8 @@ public:
   Animation(Adafruit_NeoPixel &pixels, int from, int to,  int r, int g, int b, int8_t durationIn16th);
   void setColors(int8_t r, int8_t g, int8_t b);
   virtual void run();
+  int counter = 0;
+  int incrementCounter();
 };
 
 #endif

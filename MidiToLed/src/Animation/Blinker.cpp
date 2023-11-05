@@ -10,7 +10,6 @@
 
 Blinker::Blinker(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap) : Animation(pixels, from, to, r, g, b, durIn16th) {
   this->gap = gap;
-  this->counter = 0; 
 } 
 
 void Blinker::run()
@@ -35,10 +34,6 @@ void Blinker::run()
     pixels.show();
     blink_on = !blink_on;
   }
-  if(counter >= 3 * durationIn16th - 1 ){
-    counter = 0;
-  } else {
-    counter++;
-  }
+  incrementCounter();
   
 };

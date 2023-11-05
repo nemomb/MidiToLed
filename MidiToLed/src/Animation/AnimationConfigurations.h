@@ -14,3 +14,4 @@ struct AnimationConfig {
 };
 
 extern std::map<int, std::vector<AnimationConfig>> animationConfigs;
+extern const int TOTAL_LED_COUNT;

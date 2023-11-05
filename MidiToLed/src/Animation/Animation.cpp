@@ -16,6 +16,7 @@ Animation::Animation(Adafruit_NeoPixel &pixels, int from, int to,  int r, int g,
   this->color_r = r;
   this->color_g = g;
   this->color_b = b;
+  this->counter = 0;
 } 
 
 void Animation::setColors(int8_t r, int8_t g, int8_t b)
@@ -26,5 +27,14 @@ void Animation::setColors(int8_t r, int8_t g, int8_t b)
 };
 
 void Animation::run(){}; 
+
+int Animation::incrementCounter()
+{
+ if(counter >= 3 * durationIn16th - 1 ){
+    counter = 0;
+  } else {
+    counter++;
+  }
+};
  
 

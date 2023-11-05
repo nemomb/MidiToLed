@@ -1,16 +1,28 @@
 #line 1 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+
+
+
 #define PIN 6
+#define BRIGHTNESS_PIN 6
 #define NUMPIXELS 240
 #include <Arduino.h>
 #include "src/Animation/Animation.h"
-#include "src/Animation/None.h"
+#include "src/Animation/Black.h"
 #include "src/Animation/Blinker.h"
 #include "src/Animation/WalkingDot.h"
+#include "src/Animation/Flash.h"
 #include "src/Animation/Flicker.h"
 #include "src/Animation/Animationconfigurations.h"
 #include <Adafruit_NeoPixel.h>
 #include <Adafruit_TinyUSB.h>
 #include <MIDI.h>
+
+#include "WiFi.h"
+#include "HTTPClient.h" 
+
+const char* ssid = "nemo";
+const char* password = "Feigelstrasse50";
+const char* apiUrl = "your-API-URL";
 
 Adafruit_USBD_MIDI usb_midi;
 MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
@@ -25,19 +37,19 @@ const int num_animations = 6;
 Animation *animations[num_animations] = {nullptr, nullptr, nullptr,nullptr, nullptr, nullptr}; //@Todo Do it right
 
 int rocket_i = 0;
-#line 27 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 39 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 void setup();
-#line 48 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 70 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 void loop();
-#line 53 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 77 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 void handleNoteOn(byte channel, byte pitch, byte velocity);
-#line 92 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 121 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 void handleClock();
-#line 103 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 132 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 void setColors();
-#line 115 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 144 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 Animation* createAnimation(const AnimationConfig &config, Adafruit_NeoPixel &pixels);
-#line 27 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
+#line 39 "C:\\Users\\manue\\OneDrive\\Desktop\\tmp\\MidiToLed\\MidiToLed\\MidiToLed.ino"
 void setup()
 {
 #if defined(ARDUINO_ARCH_MBED) && defined(ARDUINO_ARCH_RP2040)
@@ -48,7 +60,7 @@ void setup()
   // usb_midi.setStringDescriptor("MidiLed");
   for (size_t i = 0; i < num_animations; i++)
   {
-    animations[i] = new None(pixels, 0, 0, color_r, color_g, color_b, 0,0);
+    animations[i] = new Black(pixels, 0, 0, color_r, color_g, color_b, 0,0);
   }
   MIDI.begin(MIDI_CHANNEL_OMNI);
   MIDI.setHandleNoteOn(handleNoteOn);
@@ -57,11 +69,23 @@ void setup()
     delay(1);
   pixels.begin();
   Serial.begin(115200);
+  
+  // Connect to Wi-Fi
+  /*WiFi.begin(ssid, password);
+    delay(4000);  
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi...");
+  }
+  Serial.println("Connected to WiFi");
+  */
 }
 
 void loop()
 {
   MIDI.read();
+  Serial.println(analogRead(BRIGHTNESS_PIN));
+
 }
 
 void handleNoteOn(byte channel, byte pitch, byte velocity)
@@ -82,11 +106,16 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
     setColors();
     break;
   default:
-    Serial.println("default");
     if (animationConfigs.find(pitch) != animationConfigs.end())
     {
+      animations[0] = new Black(pixels, 0, TOTAL_LED_COUNT, 0, 0, 0, 0,0);
+      animations[0]->run();
       for (int i = 0; i < num_animations; i++)
       {
+        if (animations[i] != nullptr)
+          {
+            animations[i] = nullptr;
+          }
         if (animationConfigs[pitch].size() > i)
         {
           const AnimationConfig &config = animationConfigs[pitch][i];
@@ -140,6 +169,14 @@ Animation *createAnimation(const AnimationConfig &config, Adafruit_NeoPixel &pix
   {
     return new Flicker(pixels, config.from, config.to, color_r, color_g, color_b ,config.duration, config.specific);
   }
-  return new None(pixels, 1, 4,color_r, color_g, color_b, 8, 1);
+  else if (config.className == "Flash")
+  {
+    return new Flash(pixels, config.from, config.to, color_r, color_g, color_b ,config.duration, config.specific);
+  }
+  else if (config.className == "Black")
+  {
+    return new Black(pixels, config.from, config.to, color_r, color_g, color_b ,config.duration, config.specific);
+  }
+  return new Black(pixels, 1, 1,color_r, color_g, color_b, 8, 1);
 }
 
