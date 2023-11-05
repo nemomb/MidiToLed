@@ -180,8 +180,18 @@ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\MidiToLed.ino
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32/spiram.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/io_pin_remap.h \
  C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Arduino.h \
- C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
+ C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\Wire\src/Wire.h \
+ C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/esp32-hal.h \
+ C:\Users\manue\Documents\Arduino\libraries\U8g2\src/U8g2lib.h \
+ C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Print.h \
+ C:\Users\manue\Documents\Arduino\libraries\U8g2\src/U8x8lib.h \
+ C:\Users\manue\Documents\Arduino\libraries\U8g2\src/clib/u8x8.h \
+ C:\Users\manue\Documents\Arduino\libraries\U8g2\src/clib/u8g2.h \
+ C:\Users\manue\Documents\Arduino\libraries\U8g2\src/clib/u8x8.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/PixelFacade.h \
  C:\Users\manue\Documents\Arduino\libraries\Adafruit_NeoPixel/Adafruit_NeoPixel.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
+ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/PixelFacade.h \
  C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Black.h \
  C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Animation.h \
  C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\src/Animation/Blinker.h \
@@ -257,64 +267,6 @@ C:\Users\manue\OneDrive\Desktop\tmp\MidiToLed\ArduinoOutput\sketch\MidiToLed.ino
  C:\Users\manue\Documents\Arduino\libraries\MIDI_Library\src/midi_Message.h \
  C:\Users\manue\Documents\Arduino\libraries\MIDI_Library\src/serialMIDI.h \
  C:\Users\manue\Documents\Arduino\libraries\MIDI_Library\src/MIDI.hpp \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFi.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Print.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/IPv6Address.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiType.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiSTA.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiGeneric.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/esp_wifi/include/esp_smartconfig.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/wifi_provisioning/include/wifi_provisioning/manager.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/protocomm/include/common/protocomm.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/protocomm/include/security/protocomm_security.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/wifi_provisioning/include/wifi_provisioning/wifi_config.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiAP.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiScan.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiClient.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Client.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiServer.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Server.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiUdp.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/Udp.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\cores\esp32/cbuf.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\HTTPClient\src/HTTPClient.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFi\src/WiFiClient.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFiClientSecure\src/WiFiClientSecure.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\WiFiClientSecure\src/ssl_client.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/platform.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/port/include/mbedtls/esp_config.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/config.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/check_config.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/port/include/esp_mem.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/platform_time.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/net.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/net_sockets.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/port/include/mbedtls/bignum.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/bignum.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecp.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/pk.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/md.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/platform_util.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/rsa.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/cipher.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/asn1.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/dhm.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ecdh.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/debug.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/entropy.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/sha512.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/port/include/sha512_alt.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/hal/include/hal/sha_types.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/esp_rom/include/esp32s3/rom/sha.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/aes.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/port/include/aes_alt.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/port/include/aes/esp_aes.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/hal/include/hal/aes_types.h \
- C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14/tools/sdk/esp32s3/include/mbedtls/mbedtls/include/mbedtls/error.h
+ C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\SD\src/SD.h \
+ C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\FS\src/FS.h \
+ C:\Users\manue\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.14\libraries\SD\src/sd_defines.h

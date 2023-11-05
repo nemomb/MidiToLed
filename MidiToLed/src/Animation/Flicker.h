@@ -6,12 +6,12 @@
 #define Flame_h
 
 #include "Arduino.h"
-#include <Adafruit_NeoPixel.h>
+#include "PixelFacade.h"
 #include "Animation.h"
 
 class Flicker : public Animation {
 public:
-  Flicker(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int intensity);
+  Flicker(PixelFacade &pixels, int from, int to, int r, int g, int b, int durIn16th, int intensity);
   void run() override;
 
 private:

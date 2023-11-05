@@ -6,7 +6,7 @@
 #ifndef Blinker_h
 #define Blinker_h
 
-#include <Adafruit_NeoPixel.h>
+#include "PixelFacade.h"
 #include "Animation.h" 
 
 class Blinker : public Animation { 
@@ -14,7 +14,7 @@ class Blinker : public Animation {
     int gap; 
     bool blink_on = true;
   public:
-    Blinker(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap);
+    Blinker(PixelFacade &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap);
     void run() override ;
 };
 #endif

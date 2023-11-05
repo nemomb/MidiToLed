@@ -6,7 +6,7 @@
 #ifndef Flash_h
 #define Flash_h
 
-#include <Adafruit_NeoPixel.h>
+#include "PixelFacade.h"
 #include "Animation.h" 
 
 class Flash : public Animation { 
@@ -14,7 +14,7 @@ class Flash : public Animation {
     int gap; 
     bool off = false;
   public:
-    Flash(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap);
+    Flash(PixelFacade &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap);
     void run() override ;
 };
 #endif

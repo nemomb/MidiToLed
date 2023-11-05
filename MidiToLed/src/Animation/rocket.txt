@@ -17,6 +17,5 @@ void rocket(int from, int to, int length)
     uint16_t divisor = (3 * (rocket_i - i) + 1);
     pixels.setPixelColor(i, pixels.Color(color_r / divisor, color_g / divisor, color_b / divisor));
   }
-  pixels.show();
   rocket_i++;
 }

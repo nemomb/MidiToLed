@@ -1,14 +1,14 @@
 #include "Arduino.h"
-#include <Adafruit_NeoPixel.h>
+#include "PixelFacade.h"
 #include "Animation.h"
 #include "Flicker.h" 
 
-Flicker::Flicker(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int intensity) : Animation(pixels, from, to, r,g,b, durIn16th) {
+Flicker::Flicker(PixelFacade &pixels, int from, int to, int r, int g, int b, int durIn16th, int intensity) : Animation(pixels, from, to, r,g,b, durIn16th) {
   if (intensity <= 0) {
     intensity = 1; // Set a minimum intensity
   }
   this->intensity = intensity;
-  Serial.println(intensity);
+
 }
 
 void Flicker::run() {
@@ -23,14 +23,13 @@ void Flicker::run() {
       r = max(0, r);
       g = max(0, g);
       g = max(0, b);
-      pixels.setPixelColor(i, pixels.Color(r, g, b));
+      pixels.setPixelColor(i, r, g, b);
     }
   } else {
     for (uint16_t i = from; i < to; i++) {
-      pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+      pixels.setPixelColor(i, 0, 0, 0);
     }
   }
-  pixels.show();
 
   counter = (counter + 1) % (3 * durationIn16th);
 }

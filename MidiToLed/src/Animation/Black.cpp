@@ -1,14 +1,9 @@
-/*
-  Animation.cpp - Library for LED Animations.
-  Created by Nemo, October, 2023.
-*/
-
 #include "Arduino.h"
-#include <Adafruit_NeoPixel.h>
+#include "PixelFacade.h"
 #include "Animation.h"
 #include "Black.h"
 
-Black::Black(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int none) : Animation(pixels, from, to, r, g, b, durIn16th)
+Black::Black(PixelFacade &pixels, int from, int to, int r, int g, int b, int durIn16th, int none) : Animation(pixels, from, to, r, g, b, durIn16th)
 {
 }
 
@@ -19,8 +14,7 @@ void Black::run()
     first = false;
     for (uint16_t i = from; i < to; i++)
     {
-      pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+      pixels.setPixelColor(i, 0, 0, 0);
     }
-    pixels.show();
   }
 };

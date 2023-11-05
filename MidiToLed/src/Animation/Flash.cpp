@@ -4,11 +4,11 @@
 */
 
 #include "Arduino.h"
-#include <Adafruit_NeoPixel.h>
+#include "PixelFacade.h"
 #include "Animation.h"
-#include "Flash.h"
+#include "Flash.h" 
 
-Flash::Flash(Adafruit_NeoPixel &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap) : Animation(pixels, from, to, r, g, b, durIn16th)
+Flash::Flash(PixelFacade &pixels, int from, int to, int r, int g, int b, int durIn16th, int gap) : Animation(pixels, from, to, r, g, b, durIn16th)
 {
   this->off = false;
   this->gap = gap;
@@ -20,7 +20,7 @@ void Flash::run()
   {
     for (uint16_t i = from; i < to; i = i + 1)
     {
-      pixels.setPixelColor(i, pixels.Color(color_r, color_g, color_b));
+      pixels.setPixelColor(i, color_r, color_g, color_b);
     }
   }
   else
@@ -31,10 +31,9 @@ void Flash::run()
       uint8_t red = (pixelColor >> 16) & 0xFF;
       uint8_t green = (pixelColor >> 8) & 0xFF;
       uint8_t blue = pixelColor & 0xFF;
-      pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+      pixels.setPixelColor(i, 0, 0, 0);
     }
   }
-  pixels.show();
 
   if(counter >= 3 * durationIn16th - 1 || off){
     off=true;
